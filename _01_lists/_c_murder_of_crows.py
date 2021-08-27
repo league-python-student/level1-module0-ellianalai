@@ -5,6 +5,13 @@ import random
 
 
 def find_the_diamond(the_murder=None):
+    for i in the_murder:
+        stomach = i.stomach_contents
+        print(stomach)
+        for item in stomach:
+            if item=='diamond':
+                print('The guilty crow is' + i.name)
+
     pass
     # TODO 1) One of the Crows has eaten the diamond. You need to search
     #  through the stomach of each Crow, then print the name of the

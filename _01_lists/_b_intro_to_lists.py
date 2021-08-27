@@ -23,16 +23,21 @@ def test_2_generate_a_list():
 #  the list multiplied together
 def test_3_product(list_1):
     product = 1
-    for num in list_1 [1,5,-1,2]:
+    for i in list_1 :
+        product = product*i
 
 
-    return None
+
+    return product
 
 
 # TODO Complete the function so it returns a list with all the elements from
 #  list_1 followed by items in list_2
 def test_4_combine_lists(list_1, list_2):
-    return list()
+    for i in list_2:
+        list_1.append(i)
+
+    return list_1
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
 
