@@ -22,6 +22,7 @@ def add_guest(list_of_guests):
 def remove_guest(list_of_guests):
     guest= simpledialog.askstring(title='',prompt='Which guest would you like to remove?')
     list_of_guests.remove(guest)
+    messagebox.showinfo(title = '', message = guest + ' has been removed')
     return list_of_guests
 
 # TODO 3) Complete the function by:
