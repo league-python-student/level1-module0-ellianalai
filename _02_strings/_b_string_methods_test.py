@@ -37,10 +37,14 @@ def substring_count(s, substring):
 # Return true if String s is a palindrome
 # palindromes are words or phrases are read the same forward as backward.
 def palindrome(s):
-    print(len(s))
-    for i in range():
-        if s == len(s):
+    backwards = ''
+    for i in range(len(s)):
+        backwards += s[len(s)-i-1]
 
+    print(backwards)
+    print(s)
+
+    if backwards == s:
         return True
     else:
         return False

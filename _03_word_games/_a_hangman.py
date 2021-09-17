@@ -1,14 +1,14 @@
 import random
 import tkinter as tk
-from tkinter import messagebox
+from tkinter import messagebox,simpledialog
 
 # TODO 1) Complete the function to return a string with as many
 #  underscores (_) as there are letters in the word to guess
 #  word_to_guess = orange (a string)
 #  return          ______ (a string with 6 underscores)
 def setup_new_word(word_to_guess):
-
-    return str()
+    word_to_guess = word_to_guess.replace('','_')
+    return word_to_guess
 
 # TODO 2) Complete the function to return whether the letter is in
 #  the word to guess
@@ -16,8 +16,13 @@ def setup_new_word(word_to_guess):
 #  letter = o (a string)
 #  return True
 def check_letter_in_word(word_to_guess, letter):
+    for i in range(len(word_to_guess)):
+        if letter in len(word_to_guess):
 
-    return False
+            return True
+    else:
+        word_to_guess +=1
+        return False
 
 # TODO 3) Complete the function to return the current guess with the
 #  letter in the same places (index) of the word to guess. For example,
@@ -27,7 +32,7 @@ def check_letter_in_word(word_to_guess, letter):
 #       return o__nge (a string)
 #  Remember that strings can't be changed directly!
 def replace_letter_in_word(word_to_guess, current_guess, letter):
-
+    list_current_guess = list(current_guess)
     return str()
 
 # ====================== DO NOT EDIT THE CODE BELOW ===========================
